@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <!-- Configurações do documento -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/imgs/gravida.jpg">
+
+    <!-- SEO -->
+    <title>Taubaté</title>
+    <meta name="description" content="Venha conhecer Taubaté.">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="creator" content="Ana Carolina, Jheniffer, Lucas Adrian, Paulo Henrique, Tamiris Costa">
+</head>
+
+
+<body>
+    <!--Cabeçalho + Descrição-->
+    <header id="cabeçalho">
+        <h1 id="título">Taubaté</h1>
+        <p id="resumo">
+            Taubaté é um município brasileiro no interior do estado de São Paulo,
+            localizado na região do Vale do Paraíba, a 130 km da capital do estado, São Paulo.
+            O município é formado pela sede e pelo distrito de Quiririm. Tradicional município paulista,
+            desempenhou papel importante na evolução histórica e econômica do país.
+            Preencha esse formulário para cadastrar sua visita na nossa cidade:
+        </p>
+    </header>
+
+    <!--Criação do Formulário-->
+    <section>
+        <form action="#" method="post">
+            <!--Nome-->
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" maxlength="100" name="nome" placeholder="Insira seu nome completo" id="nome">
+            </div>
+            <br>
+            <!--Email-->
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Insira seu e-mail" name="email" id="email" maxlength="100">
+            </div>
+            <br>
+            <!--Telefone-->
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tell" required placeholder="(xx) xxxxx-xxxx" name="telefone" id="telefone" maxlength="15">
+
+            </div>
+            <br>
+            <!--Data de Nascimento-->
+            <div>
+                <label for="dataNasc">Data Nascimento:</label>
+                <input type="text" required placeholder=" dd/mm/aaaa" name="dataNasc" id="dataNasc" maxlength="10">
+            </div>
+            <!--Maior de Idade-->
+            <div>
+                <h2>Maior de idade?</h2>
+                <label for="idade">Sim</label>
+                <input type="radio" name="idade" id="idade1">
+                <label for="idade">Não</label>
+                <input type="radio" name="idade" id="idade2">
+            </div>
+
+            <!--Escolha dos pontos turísticos-->
+            <div>
+                <h2>Selecione um ponto de turístico da cidade:</h2>
+                <select name="opPontodeInteresse">
+                    <option value="opSelect" disabled selected hidden>Selecione o Ponto</option>
+                    <option value="opMuseuMazaroppi">Museu Mazaroppi</option>
+                    <option value="opSitioPicaPau">Sítio do Pica Pau</option>
+                    <option value="opValeItaim">Parque Vale do Itaim</option>
+                    <option value="opMuseuHistoria">Museu de História Natural de Taubaté</option>
+                </select>
+            </div>
+
+            <!--Seu Interesse na Cidade-->
+            <div>
+                <h2>Qual interesse você tem na cidade:</h2>
+
+                <div>
+                    <input type="checkbox" name="ckbInteresse" value="ckbTurismo" id="ckbTurismo">
+                    <label for="ckbTurismo">Turista</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="ckbInteresse" value="ckbEstudo" id="ckbEstudo">
+                    <label for="ckbEstudo">Estudante</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="ckbInteresse" value="ckbResidente" id="ckbResidente">
+                    <label for="ckbResidente">Residente</label>
+                </div>
+
+
+            </div>
+
+
+        </form>
+        <br>
+
+        <!--Botões-->
+        <input type="submit" value="Enviar">
+        <!--Gambiarra para resetar / Alterar link para gitpage depois de pronto-->
+        <a href="http://127.0.0.1:5500/index.html"><input type="button" value="Resetar informações" onreset=""></a>
+
+    </section>
+
+
+</body>
+
+
+<footer>Todos os direitos reservados Grupo 05: Ana Carolina, Jheniffer Farias, Lucas Adrian, Tamiris Costa e Paulo
+    Henrique.</footer>
+
+</html>
