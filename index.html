@@ -17,24 +17,40 @@
     <meta http-equiv="content-language" content="pt-br">
     <meta name="creator" content="Ana Carolina, Jheniffer, Lucas Adrian, Paulo Henrique, Tamiris Costa">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    
+
+    <!-- Link da fonte nova -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+
 </head>
 
 
 <body>
-        <!--Cabeçalho + Descrição-->
+    <!--Cabeçalho + Descrição-->
 
-    <header class="cabecalho">
-        <h1 class="titulo">Taubaté</h1>
-        <p class="resumo">
-            Taubaté é um município brasileiro no interior do estado de São Paulo,
-            localizado na região do Vale do Paraíba, a 130 km da capital do estado, São Paulo.
-            O município é formado pela sede e pelo distrito de Quiririm. Tradicional município paulista,
-            desempenhou papel importante na evolução histórica e econômica do país. Preencha esse formulário para cadastrar sua visita na nossa cidade:
-        </p>
+    <header>
+
+        <div id=animacaoTaubate>
+            <h1 class="titulo">Taubaté</h1>
+        </div>
+
+        <div class="resumo">
+            <p>
+                Taubaté é um município brasileiro no interior do estado de São Paulo,
+                localizado na região do Vale do Paraíba, a 130 km da capital do estado, São Paulo.
+                O município é formado pela sede e pelo distrito de Quiririm. Tradicional município paulista,
+                desempenhou papel importante na evolução histórica e econômica do país. Preencha esse formulário para
+                cadastrar sua visita na nossa cidade:
+            </p>
+
+        </div>
 
 
-    <!--    
+
+
+        <!--    
         <div class="imagem">
             <img src="/checkpoint02-grupo05/imgs/cti.jpg" alt="cti">
         </div>
@@ -45,46 +61,91 @@
 
     <!--Criação do Formulário-->
     <section>
+
+
         <form action="#" method="post">
             <!--Nome-->
             <div class="subTitulo">
-                <h2>seus dados</h2>
-                <label for="nome">Nome:</label>
-                <input class="caixa" type="text" maxlength="100" name="nome" placeholder="Insira seu nome completo" id="nome">
-            </div>
-            <br>
-            <!--Email-->
-            <div class="subTitulos">
-                <label for="email">E-mail:</label>
-                <input class="caixa" type="email" placeholder="Insira seu e-mail" name="email" id="email" maxlength="100">
-            </div>
-            <br>
-            <!--Telefone-->
-            <div class="subTitulos">
-                <label for="telefone">Telefone:</label>
-                <input class="caixa" type="tel" required placeholder="(xx) xxxxx-xxxx" name="telefone" id="telefone" maxlength="15">
+
+                <div class="seusDados">
+                    <h2>seus dados</h2>
+                </div>
+
+
+                <div class="nomeEmailTelefoneNascimento">
+
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input class="caixa" type="text" maxlength="100" name="nome"
+                            placeholder="Insira seu nome completo" id="nome">
+                    </div>
+
+
+                    <!--Email-->
+
+                    <div class="email">
+                        <div class="subTitulos">
+                            <label for="email">E-mail:</label>
+                            <input class="caixa" type="email" placeholder="Insira seu e-mail" name="email" id="email"
+                                maxlength="100">
+                        </div>
+                    </div>
+
+                    <!--Telefone-->
+
+                    <div class="subTitulos">
+                        <div class="telefone">
+                            <label for="telefone">Telefone:</label>
+                            <input class="caixa" type="tel" required placeholder="(xx) xxxxx-xxxx" name="telefone"
+                                id="telefone" maxlength="15">
+
+                        </div>
+                    </div>
+
+                    <!--Data de Nascimento-->
+                    <div class="subTitulos">
+                        <div class="dataNascimento">
+                            <label for="dataNasc">Data de nascimento:</label>
+                            <input class="caixa" type="date" required placeholder="dd/mm/aaaa" name="dataNasc"
+                                id="dataNasc" maxlength="10">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <!--Maior de Idade-->
+                <div class="subTitulos">
+
+                    <div class="maiorIdade">
+                        <h2>Maior de idade?</h2>
+                    </div>
+
+                    <div class="simEnao">
+                        <label for="idade">Sim</label>
+                        <input type="radio" name="idade" id="idade1">
+
+
+                        <label for="idade">Não</label>
+                        <input type="radio" name="idade" id="idade2">
+                    </div>
+
+                </div>
+
+
 
             </div>
-            <br>
-            <!--Data de Nascimento-->
-            <div class="subTitulos">
-                <label for="dataNasc">Data de nascimento:</label>
-                <input class="caixa" type="date" required placeholder="dd/mm/aaaa" name="dataNasc" id="dataNasc" maxlength="10">
-            </div>
 
-            <!--Maior de Idade-->
-            <div class="subTitulos">
-                <h2>Maior de idade?</h2>
-                <label for="idade">Sim</label>
-                <input type="radio" name="idade" id="idade1">
-                <label for="idade">Não</label>
-                <input type="radio" name="idade" id="idade2">
             </div>
 
             <!--Escolha dos pontos turísticos-->
             <div class="subTitulos">
-                <h2>Selecione um ponto de turístico da cidade:</h2>
-                <select name="opPontodeInteresse">
+
+                <div class="selecionePontoTuristico">
+                    <h2>Selecione um ponto turístico da cidade:</h2>
+                </div>
+                <select name="opPontodeInteresse" class="selecioneOponto">
                     <option value="opSelect" disabled selected hidden>Selecione o ponto</option>
                     <option value="opMuseuMazaroppi">Museu Mazaroppi</option>
                     <option value="opSitioPicaPau">Sítio do Pica Pau Amarelo</option>
@@ -95,11 +156,16 @@
 
             <!--Seu Interesse na Cidade-->
             <div class="subTitulos">
-                <h2>Qual interesse você tem na cidade:</h2>
+
+                <div class="interesseNaCidade">
+                    <h2>Qual interesse você tem na cidade:</h2>
+                </div>
 
                 <div class="checkbox">
-                    <input type="checkbox" name="ckbInteresse" value="ckbTurismo" id="ckbTurismo">
-                    <label for="ckbTurismo">Turista</label>
+                    <class="checkbox">
+                        <input type="checkbox" name="ckbInteresse" value="ckbTurismo" id="ckbTurismo" >
+                        <label for="ckbTurismo">Turista</label>
+
                 </div>
 
                 <div class="checkbox">
@@ -110,8 +176,10 @@
                 <div class="checkbox">
                     <input type="checkbox" name="ckbInteresse" value="ckbResidente" id="ckbResidente">
                     <label for="ckbResidente">Residente</label>
+
                 </div>
 
+            </div>
 
 
 
@@ -122,16 +190,21 @@
         <br>
 
         <!--Botões-->
-        <input type="submit" value="Enviar">
-        <!--Gambiarra para resetar / Alterar link para gitpage depois de pronto-->
-        <a href="https://lucas-adrian.github.io/checkpoint02-grupo05/"><input type="button" value="Resetar informações" onreset=""></a>
-
+        <div class="botoes">
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                        <!--Gambiarra para resetar / Alterar link para gitpage depois de pronto-->
+                        
+                    <a href="https://lucas-adrian.github.io/checkpoint02-grupo05/">
+                    <input type="button"
+                    value="Resetar informações" class="btn-resetar">
+        </div>
     </section>
 
 
 </body>
 
 
-<footer>Todos os direitos reservados. CTD - Grupo 05: Ana Carolina, Jheniffer Farias, Lucas Adrian, Tamiris Costa e Paulo Henrique.</footer>
+<footer> <span class="smallFinal"> Todos os direitos reservados. CTD - Grupo 05: Ana Carolina, Jheniffer Farias, Lucas Adrian, Tamiris Costa e
+    Paulo Henrique. </span> </footer>
 
 </html>
