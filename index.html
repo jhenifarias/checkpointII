@@ -60,10 +60,12 @@
 
 
     <!--Criação do Formulário-->
+
+
     <section>
 
 
-        <form action="#" method="post">
+        <form id="myForm" action="#" method="post">
             <!--Nome-->
             <div class="subTitulo">
 
@@ -96,10 +98,11 @@
                     <div class="subTitulos">
                         <div class="telefone">
                             <label for="telefone">Telefone:</label>
-                            <input class="caixa" type="tel" required placeholder="(xx) xxxxx-xxxx" name="telefone"
-                                id="telefone" maxlength="15">
-
+                            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required="" 
+                            pattern="\(\d{2}\) \d{4,5}-\d{4}" maxlength="15">                                                    
+                            
                         </div>
+                        
                     </div>
 
                     <!--Data de Nascimento-->
@@ -163,7 +166,7 @@
 
                 <div class="checkbox">
                     <class="checkbox">
-                        <input type="checkbox" name="ckbInteresse" value="ckbTurismo" id="ckbTurismo" >
+                        <input type="checkbox" name="ckbInteresse" value="ckbTurismo" id="ckbTurismo">
                         <label for="ckbTurismo">Turista</label>
 
                 </div>
@@ -181,7 +184,13 @@
 
             </div>
 
+                   <!--Botões-->
+            </div>
+            <div class="botoes">
 
+
+                <input type="submit" value="Enviar" class="btn-enviar">
+                <input type="reset" value="Limpar" class="btn-resetar">
 
             </div>
 
@@ -189,22 +198,16 @@
         </form>
         <br>
 
-        <!--Botões-->
-        <div class="botoes">
-                    <input type="submit" value="Enviar" class="btn-enviar">
-                        <!--Gambiarra para resetar / Alterar link para gitpage depois de pronto-->
-                        
-                    <a href="https://lucas-adrian.github.io/checkpoint02-grupo05/">
-                    <input type="button"
-                    value="Resetar informações" class="btn-resetar">
-        </div>
+      
+
     </section>
 
 
 </body>
 
 
-<footer> <span class="smallFinal"> Todos os direitos reservados. CTD - Grupo 05: Ana Carolina, Jheniffer Farias, Lucas Adrian, Tamiris Costa e
-    Paulo Henrique. </span> </footer>
+<footer> <span class="smallFinal"> Todos os direitos reservados. CTD - Grupo 05: Ana Carolina, Jheniffer Farias, Lucas
+        Adrian, Tamiris Costa e
+        Paulo Henrique. </span> </footer>
 
 </html>

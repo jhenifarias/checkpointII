@@ -96,6 +96,17 @@ margin: 25px auto 25px;
 cursor: pointer;
   }
 
+  
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  }
+
   .caixa {
     color: rgb(100, 98, 98);
   
@@ -208,4 +219,5 @@ footer {
   float: right;
   margin-bottom: 15px;
 }
+
 
