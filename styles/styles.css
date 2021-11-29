@@ -8,29 +8,140 @@ body {
 
 h1 {  
   text-align: center;
-  font-size: 100px;
+  font-size: 150px;
+  font-weight: 900;
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 
+   
+    }
+
+ /* Efeito no nome de Taubaté */
+
+    #animacaoTaubate{
+    background: url(https://c4.wallpaperflare.com/wallpaper/752/514/379/photography-landscape-nature-plants-wallpaper-preview.jpg);
+    background-size: 40%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout 10s ease 500ms forwards;
+      
+
+  }
+
+  @keyframes zoomout {
+    from {
+      background-size: 20%;
+    }
+    to {
+      background-size: 95%;
+    }
+  }
+        
+/* fim efeito no nome de Taubaté */
+
+/* Dizeres sobre a cidade de Taubaté (abaixo do nome, cabeçalho) */
+.resumo {
+  margin: 0 80px 10px;
+  margin-top: -100px;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 40px;
+  
 }
+
+
+/* Formulário (de "seus dados" a "qual interesse cidade") */
+
+
+.seusDados, .maiorIdade, .selecionePontoTuristico, .interesseNaCidade {
+  text-align: center;
+  margin: 25px auto 25px;
+  margin-top: -10px;
+  font-size: larger;
+  text-shadow: 2px 5px 4px #2e0b0b;
+  white-space: nowrap;
+  overflow: hidden;    
+
+  animation: animated-text 5s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+ 
+  }
+
+ 
+  @keyframes animated-text{
+    from{width: 3%;}
+    to{width: 100%;}
+  }
+  
+ 
+
+
+
+.selecioneOponto  {
+    text-align-last: center;
+    width: 50%;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 0 auto;
+    display: block;
+    font-size: larger;
+   
+  }
+
+.nome, .email, .telefone, .dataNascimento, .simEnao, .interessesCidadeCheck, .checkbox {
+text-align: center;
+padding: auto;
+margin: 25px auto 25px;
+cursor: pointer;
+  }
+
+  
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  }
+
+  .caixa {
+    color: rgb(100, 98, 98);
+  
+  }
+.nome:hover,  .email:hover, .telefone:hover, .dataNascimento:hover, .simEnao:hover, .checkbox:hover, .botoes:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
 
 label {
   background:#ff6347;
   border-radius: 10px;
   padding: 4px;
   font-weight: bold;
+  cursor: pointer;
 }
+
+.maiorIdade, input[radio] {
+  margin-bottom: 25px;
+  cursor: pointer;
+
+}
+
 
 .checkbox {
     padding: 8px;
-}
-
-.resumo {
-  margin: 0 80px 10px;
-  margin-top: -70px;
-  font-size: 16px;
-  text-align: justify;
 
 }
+input[type=checkbox] {
+  transform: scale(1.5);
+  cursor: pointer;
+ } 
+
+
 
 h2 {
   text-transform: uppercase;
@@ -41,28 +152,72 @@ h2 {
 }
 
 section {
-  background: #073553;
+  background-image: linear-gradient(90deg, rgb(21, 7, 71), rgb(58, 57, 1));
+  /* background-position: content; */
+  background-size: auto;
   text-align: left;
   border-style:solid; 
   border-radius: 20px;
-  border-color: #70c6ff; 
+  border-color: #0c0f11; 
   
 }
 
 .subTitulo {
-  margin-top: 10px;
-  margin-left: 10px;
+margin-top: 10px;
+margin-left: 10px; 
+
+
   
 }
 
 .subTitulos {
-  margin-left: 10px;  
+  margin: 0 auto;
+  display: block;
+   
   
-}
+}  */
 
 .caixa { 
   border-style:solid; 
   padding: 6px;
   border-radius: 10px;
   border-color: #70c6ff; 
+ 
 }
+
+.botoes {
+  text-align: center;
+  padding: 20px;
+  margin-top: -35px;
+  margin-bottom: 15px;
+
+  
+
+
+}
+.btn-enviar, .btn-resetar {
+  background-color:rgb(219, 242, 248) ;
+  color: rgb(0, 0, 0);
+  display : inline-block;
+  width:200px;
+  height:40px;
+  font-size: larger;
+  cursor: pointer;
+  box-shadow: 1px 3px #361a1a;
+}
+
+footer {
+  text-align: justify;
+  padding: 20px;
+  margin: 0 auto
+
+}
+
+.smallFinal{
+  font-size: 10px; 
+  color: whitesmoke;
+  float: right;
+  margin-bottom: 15px;
+}
+
+
