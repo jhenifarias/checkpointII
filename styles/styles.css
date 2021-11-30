@@ -188,13 +188,10 @@ margin-left: 10px;
 .botoes {
   text-align: center;
   padding: 20px;
-  margin-top: -35px;
   margin-bottom: 15px;
 
-  
-
-
 }
+
 .btn-enviar, .btn-resetar {
   background-color:rgb(219, 242, 248) ;
   color: rgb(0, 0, 0);
